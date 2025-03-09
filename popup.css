@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 10px;
+    background: linear-gradient(to right, #eb9d58, #ebbb52);
+    color: #fff;
+  }
+  
+  .container {
+    /* text-align: justify; */
+    border-radius: 5rem;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  label, select, button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    animation: slideIn 1s ease-out;
+  }
+  
+  button {
+    background-color: #f18436f5;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  button:hover {
+    background-color: #e75d0e;
+  }
+  
+  #creds {
+    margin-top: 20px;
+    word-wrap: break-word;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+
+  .creds-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cred-item {
+    margin-bottom: 5px;
+  }
+  
+  .cred-key {
+    font-weight: bold;
+  }
+  
+  .cred-value {
+    font-style: italic;
+    word-wrap: break-word; 
+  }

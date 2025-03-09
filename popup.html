@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request-Cred</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Request-Cred</h1>
+
+    <label for="connector">Choose a Connector:</label>
+    <select id="connector">
+      <option value="Amazon_S3">AWS S3</option>
+      <option value="Salesforce">Salesforce</option>
+      <option value="Sharepoint_online">SharePoint</option>
+    </select>
+
+    <button id="get-creds-button">Get Credentials</button>
+    <div id="message"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

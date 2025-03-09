@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Request-Cred",
+    "description": "Provide various connectors creds based on the cloud product chosen from Informatica IICS",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/creds16.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+   "permissions": [
+    "storage",
+    "contextMenus",
+    "notifications",
+    "cookies",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://example.com/*",
+    "http://localhost/*"
+  ],
+    "icons": {
+     "16": "images/creds16.png"
+    }
+  }
+  
